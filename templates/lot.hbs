@@ -25,6 +25,8 @@
 
 </form>
 
-{{#each item in this.items}}
-  {{item.title}}
-{{/each}}
+<ul>
+  {{#each item in this.items}}
+    <li>{{#link-to 'item' item.id}}Item: {{item.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
