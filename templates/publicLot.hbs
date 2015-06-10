@@ -10,6 +10,9 @@
 <ul>
   {{#each this.items}}
     <li>
+      <img class="thumbnail"{{bind-attr src=imageURL}} />
+    </li>
+    <li>
       title: {{title}} <br>
       url: {{imageURL}} <br>
       desc: {{description}}
