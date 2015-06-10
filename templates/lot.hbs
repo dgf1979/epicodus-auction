@@ -1,0 +1,8 @@
+<h3>Lot Id: {{this.id}}</h3>
+
+<img {{bind-attr src=this.imageURL}} />
+<h4>{{this.title}}</h4>
+<h5>{{this.description}}</h5>
+<h6>{{this.startPrice}}</h6>
+
+<button class="btn btn-danger" {{action 'delete'}}>Delete</button>

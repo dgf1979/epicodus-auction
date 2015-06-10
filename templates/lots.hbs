@@ -1,6 +1,6 @@
 Lots
 <ul>
 {{#each}}
-  <li>{{title}} - {{description}}</li>
+  <li>{{#link-to 'lot' this.id}}{{title}} - {{description}}{{/link-to}}</li>
 {{/each}}
 </ul>
