@@ -6,3 +6,13 @@
   <li>{{description}}</li>
   <li>{{startPrice}}</li>
 </ul>
+
+<ul>
+  {{#each this.items}}
+    <li>
+      title: {{title}} <br>
+      url: {{imageURL}} <br>
+      desc: {{description}}
+    </li>
+  {{/each}}
+</ul>
