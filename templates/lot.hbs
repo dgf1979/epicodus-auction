@@ -6,3 +6,25 @@
 <h6>{{this.startPrice}}</h6>
 
 <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+
+
+<form name="itemForm" id="itemForm">
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    {{input  id="title" class="form-control" value=itemTitle }}
+
+    <label for="description">Description</label>
+    {{input  id="description" class="form-control" value=itemDescription }}
+
+    <label for="imageURL">Image URL</label>
+    {{input  id="imageURL" class="form-control" value=itemImageURL }}
+  </div>
+
+  <button class="btn btn-primary" {{action 'saveItem'}}>Add Item</button>
+
+</form>
+
+{{#each item in this.items}}
+  {{item.title}}
+{{/each}}
