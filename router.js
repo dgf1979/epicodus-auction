@@ -4,4 +4,6 @@ Auction.Router.map(function() {
   this.resource('lots');
   this.resource('add-lot');
   this.resource('lot', {path:'lots/:lot_id'});
+  this.resource('publicLot', {path:'publiclots/:lot_id'});
+
 });

@@ -1,0 +1,10 @@
+<div class="items">
+  {{#each}}
+    <div class="item-div">
+      <img class="item-image"{{bind-attr src=imageURL}} />
+
+      <div class="item-title">{{title}}</div>
+      <div class="item-description">{{description}}</div>
+    </div>
+  {{/each}}
+</div>
