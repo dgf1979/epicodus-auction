@@ -1,4 +1,4 @@
-Auction.AddLotController = Ember.Controller.extend({
+Auction.LotsController = Ember.ArrayController.extend({
   actions: {
     save: function() {
       var newLot = this.store.createRecord('lot', {
@@ -9,7 +9,6 @@ Auction.AddLotController = Ember.Controller.extend({
       });
 
       newLot.save();
-      this.transitionToRoute('lots');
     }
   }
 });
