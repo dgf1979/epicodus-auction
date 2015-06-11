@@ -1,3 +1,36 @@
+<div class="col-sm-12">
+  <div class="row public-lots-header">
+      <span class="logo"><img src="img/icon.png" /></span>
+
+      <span class="page-header">Current Items</span>
+  </div>
+
+  {{#each}}
+    <div class="row">
+      <div class="col-sm-8 public-lot-image-container">
+        <div class="public-lot-image-border image-grad-yellow">
+          {{#link-to 'publicItem' this.id}}<img class="public-lot-image"{{bind-attr src=imageURL}} />{{/link-to}}
+        </div>
+      </div>
+
+      <div class="col-sm-4 public-lot-text-container">
+        <div class="col-sm-12 public-lot-title-description-container">
+          <span class="public-lot-title">
+            {{title}}
+          </span>
+          <div class="public-lot-description">
+              {{description}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  {{/each}}
+
+</div>
+
+
+<!--
 <div class="items">
   {{#each}}
     <div class="item-div">
@@ -7,4 +40,4 @@
       <div class="item-description">{{description}}</div>
     </div>
   {{/each}}
-</div>
+</div> -->

@@ -1,16 +1,25 @@
 <div class="container">
+  <div class="row row1">
+    <div class="header-logo">
+      <span class="auction-logo"><img src="img/auctionlogo.png" /></span>
+
+      <span class="title">Name of Place</span>
+
+    </div>
+  </div>
   <div class="row">
-    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+    </div>
       <div class="col-sm-8">
 
           <div class="row">
             <nav class="navbar navbar-default" role="navigation">
               <ul class="nav navbar-nav">
-                <li>{{#link-to 'publicLots'}}Lots{{/link-to}}</li>
-                <li>{{#link-to 'publicItems'}}Items{{/link-to}}</li>
+                <li>{{#link-to 'publicLots' classNames='nav-link'}}<span class="">Lots</span>{{/link-to}}</li>
+                <li>{{#link-to 'publicItems' classNames='nav-link'}}Items{{/link-to}}</li>
               </ul>
               <ul id="manage-nav" class="nav navbar-nav">
-                <li>{{#link-to 'lots'}}Manage Lots{{/link-to}}</li>
+                <li>{{#link-to 'lots' classNames='nav-link'}}Manage Lots{{/link-to}}</li>
               </ul>
             </nav>
           </div>

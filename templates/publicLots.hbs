@@ -1,12 +1,14 @@
 <div class="col-sm-12">
   <div class="row public-lots-header">
-      <h2>Current Lots</h2>
+      <span class="logo"><img src="img/icon.png" /></span>
+
+      <span class="page-header">Current Lots</span>
   </div>
 
   {{#each}}
     <div class="row">
       <div class="col-sm-8 public-lot-image-container">
-        <div class="public-lot-image-border">
+        <div class="public-lot-image-border image-grad-teal">
           {{#link-to 'publicLot' this.id}}<img class="public-lot-image"{{bind-attr src=imageURL}} />{{/link-to}}
         </div>
       </div>

@@ -3,6 +3,8 @@ html, body {
   text-align: center;
 }
 
+
+
 h1, h2, h3, h4, h5 ,h6 {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -11,6 +13,11 @@ h1, h2, h3, h4, h5 ,h6 {
 .navbar {
   margin-top: 2px;
   margin-bottom: 2px;
+  font-size:20px;
+}
+
+.nav-link{
+  color:black !important;
 }
 
 .row {
@@ -56,31 +63,21 @@ h1, h2, h3, h4, h5 ,h6 {
   border-radius:10px;
   border: 2px solid darkgrey;
   display: inline-block;
-  background: linear-gradient(145deg, darkred, #C58080);
+
+}
+
+.image-grad-teal {
+  background: linear-gradient(145deg, #00b593, #005e4d);
+}
+
+.image-grad-yellow {
+  background: linear-gradient(145deg, #EBBB40, #AF7728);
 }
 
 .public-lot-image {
   height:150px;
   border-radius:10px;
   border: 2px solid darkgrey;
-}
-
-.items {
-  min-height: 300px;
-  position: relative;
-  background-color: orange;
-}
-
-.item-div{
-  text-align:center;
-  background-color:purple;
-  width:32%;
-  height:auto;
-  float:left;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom:10px;
-  margin: 0.6%;
 }
 
 .thumbnail{
@@ -91,4 +88,27 @@ h1, h2, h3, h4, h5 ,h6 {
   #manage-nav {
     float: right;
   }
+}
+
+.title{
+  font-size:50px;
+  font-family:pacifico;
+  vertical-align: bottom;
+}
+
+.logo img{
+  width:70px;
+}
+
+.row1{
+  margin-bottom:2px;
+}
+
+.page-header{
+  font-size:40px;
+  border-bottom:none;
+}
+
+.auction-logo img{
+  width:80px;
 }
