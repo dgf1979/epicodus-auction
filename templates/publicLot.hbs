@@ -10,11 +10,11 @@
 <ul>
   {{#each this.items}}
     <li>
-      <img class="thumbnail"{{bind-attr src=imageURL}} />
+    {{#link-to 'publicItem' id}}<img class="thumbnail"{{bind-attr src=imageURL}} />{{/link-to}}
     </li>
     <li>
+      id: {{id}} <br />
       title: {{title}} <br>
-      url: {{imageURL}} <br>
       desc: {{description}}
     </li>
   {{/each}}
