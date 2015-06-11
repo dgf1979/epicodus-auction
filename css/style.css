@@ -1,3 +1,57 @@
+html, body {
+  font-family: 'Marck Script', cursive;
+  text-align:center;
+  background-color:
+}
+
+.row {
+  margin-bottom:2%;
+  padding: 6px 0px 6px 0px;
+}
+
+.public-lot-text-container {
+  padding-top:4%;
+  text-align:left;
+}
+
+.public-lot-price-container {
+  /*width:40%;*/
+  /*float:left;*/
+  }
+
+.public-lot-title-description-container {
+  /*width:40%;*/
+  /*float:left;*/
+  }
+
+.public-lot-title {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.public-lot-price {
+  font-size: 2em;
+
+}
+
+.public-lot-image-container {
+  text-align:right;
+}
+
+.public-lot-image-border {
+  padding: 6px;
+  border-radius:10px;
+  border: 2px solid darkgrey;
+  display: inline-block;
+  background: linear-gradient(145deg, darkred, black);
+}
+
+.public-lot-image {
+  height:150px;
+  border-radius:10px;
+  border: 2px solid darkgrey;
+}
+
 .items {
   min-height: 300px;
   position: relative;

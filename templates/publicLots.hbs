@@ -1,6 +1,33 @@
-Public Lots
-<ul>
+
+
+<div class="row public-lots-header">
+  <div class="col-sm-12">
+    Public Lots
+  </div>
+</div>
 {{#each}}
-  <li>{{#link-to 'publicLot' this.id}}{{title}} - {{description}}{{/link-to}}</li>
+  <div class="row">
+    <div class="col-sm-6 public-lot-image-container">
+      <div class="public-lot-image-border">
+        {{#link-to 'publicLot' this.id}}<img class="public-lot-image"{{bind-attr src=imageURL}} />{{/link-to}}
+      </div>
+    </div>
+
+    <div class="col-sm-6 public-lot-text-container">
+      <div class="col-sm-4 public-lot-title-description-container">
+        <span class="public-lot-title">
+          {{title}}
+        </span>
+        <div class="public-lot-description">
+            {{description}}
+        </div>
+      </div>
+
+      <div class="col-sm-2 public-lot-price-container">
+        <span class="public-lot-price">
+          {{startPrice}}
+        </span>
+      </div>
+    </div>
+  </div>
 {{/each}}
-</ul>
