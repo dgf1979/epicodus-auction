@@ -1,22 +1,24 @@
-<h3>Edit Item: {{id}}</h3>
+<div class="manage">
+  <h3>Edit Item: {{id}}</h3>
 
-<form name="editItemForm" id="editItemForm">
+  <form name="editItemForm" id="editItemForm">
 
-  <div class="form-group">
-    <label for="title">Title</label>
-    {{input  id="title" class="form-control" value=title }}
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input  id="title" class="form-control" value=title }}
 
-    <label for="description">Description</label>
-    {{input  id="description" class="form-control" value=description }}
+      <label for="description">Description</label>
+      {{input  id="description" class="form-control" value=description }}
 
-    <label for="imageURL">Image URL</label>
-    {{input  id="imageURL" class="form-control" value=imageURL }}
-  </div>
+      <label for="imageURL">Image URL</label>
+      {{input  id="imageURL" class="form-control" value=imageURL }}
+    </div>
 
-  <button class="btn btn-primary" {{action 'updateItem'}}>Update Item</button>
+    <button class="btn btn-primary" {{action 'updateItem'}}>Update Item</button>
 
-</form>
+  </form>
 
-<h3>Delete Item</h3>
+  <h3>Delete Item</h3>
 
-<button class="btn btn-danger" {{action 'deleteItem'}}>Delete Item</button>
+  <button class="btn btn-danger" {{action 'deleteItem'}}>Delete Item</button>
+</div>

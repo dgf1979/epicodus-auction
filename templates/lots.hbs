@@ -1,22 +1,25 @@
-Lots
+<div class="manage">
+  <h1>Add Lot</h1>
 
-<form>
-  <div class="form-group">
-    <label for="title">Title</label>
-    {{input  id="title" class="form-control" value=title }}
-    <label for="description">Description</label>
-    {{input  id="description" class="form-control" value=description }}
-    <label for="startPrice">Starting Price</label>
-    {{input  id="startPrice" class="form-control" value=startPrice }}
-    <label for="imageURL">Image URL</label>
-    {{input  id="imageURL" class="form-control" value=imageURL }}
-  </div>
-  <button class="btn btn-primary" {{action 'save'}}>Add Lot</button>
+  <form class="manage-form well">
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input  id="title" class="form-control" value=title }}
+      <label for="description">Description</label>
+      {{input  id="description" class="form-control" value=description }}
+      <label for="startPrice">Starting Price</label>
+      {{input  id="startPrice" class="form-control" value=startPrice }}
+      <label for="imageURL">Image URL</label>
+      {{input  id="imageURL" class="form-control" value=imageURL }}
+    </div>
+    <button class="btn btn-primary" {{action 'save'}}>Add Lot</button>
 
-</form>
+  </form>
 
-<ul>
-{{#each}}
-  <li>{{#link-to 'lot' this.id}}{{title}} - {{description}}{{/link-to}}</li>
-{{/each}}
-</ul>
+  <h2>Lots</h2>
+  <ul class="manage-list well">
+  {{#each}}
+    <li>{{#link-to 'lot' this.id}}{{title}} - {{description}}{{/link-to}}</li>
+  {{/each}}
+  </ul>
+</div>

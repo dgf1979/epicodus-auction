@@ -1,32 +1,38 @@
-<h3>Lot Id: {{this.id}}</h3>
-
-<img class="manage-lot-image"{{bind-attr src=this.imageURL}} />
-<h4>{{this.title}}</h4>
-<h5>{{this.description}}</h5>
-<h6>{{this.startPrice}}</h6>
-
-<button class="btn btn-danger" {{action 'delete'}}>Delete</button>
-
-
-<form name="itemForm" id="itemForm">
-
-  <div class="form-group">
-    <label for="title">Title</label>
-    {{input  id="title" class="form-control" value=itemTitle }}
-
-    <label for="description">Description</label>
-    {{input  id="description" class="form-control" value=itemDescription }}
-
-    <label for="imageURL">Image URL</label>
-    {{input  id="imageURL" class="form-control" value=itemImageURL }}
+<div class="manage">
+  <div class="manage-lot">
+    <h2>{{this.title}}</h2>
+    <h4>Id: {{this.id}}</h4>
+    <img class="manage-lot-image"{{bind-attr src=this.imageURL}} />
+    <h5>{{this.description}}</h5>
+    <h6>{{this.startPrice}}</h6>
   </div>
 
-  <button class="btn btn-primary" {{action 'saveItem'}}>Add Item</button>
+  <h3>Add Item</h3>
+  <form class="manage-form well" name="itemForm" id="itemForm">
 
-</form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input  id="title" class="form-control" value=itemTitle }}
 
-<ul>
-  {{#each item in this.items}}
-    <li>{{#link-to 'item' item.id}}Item: {{item.title}}{{/link-to}}</li>
-  {{/each}}
-</ul>
+      <label for="description">Description</label>
+      {{input  id="description" class="form-control" value=itemDescription }}
+
+      <label for="imageURL">Image URL</label>
+      {{input  id="imageURL" class="form-control" value=itemImageURL }}
+    </div>
+
+    <button class="btn btn-primary" {{action 'saveItem'}}>Add Item</button>
+
+  </form>
+
+    <h3>Delete Item</h3>
+    <div class="manage-list well">
+      <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+    </div>
+    <h3>Items</h3>
+    <ul class="manage-list well">
+    {{#each item in this.items}}
+      <li>{{#link-to 'item' item.id}}Item: {{item.title}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+</div>

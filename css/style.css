@@ -124,3 +124,22 @@ h1, h2, h3, h4, h5 ,h6 {
   font-size: 16px;
   font-weight: bold;
 }
+
+.manage{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+
+.manage-form{
+  margin:20px;
+}
+
+.manage-list{
+  margin:20px;
+}
+
+.manage-lot{
+  padding:10px;
+  margin:30px;
+  margin-top:0px;
+}
