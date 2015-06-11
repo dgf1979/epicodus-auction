@@ -1,13 +1,24 @@
 <div class="container">
-  <nav class="navbar navbar-default" role="navigation">
-    <ul class="nav navbar-nav">
-      <li>{{#link-to 'publicLots'}}Lots{{/link-to}}</li>
-      <li>{{#link-to 'publicItems'}}Items{{/link-to}}</li>
-      <li>{{#link-to 'lots'}}Manage Lots{{/link-to}}</li>
+  <div class="row">
+    <div class="col-sm-2"></div>
+      <div class="col-sm-8">
 
-    </ul>
-  </nav>
+          <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+              <ul class="nav navbar-nav">
+                <li>{{#link-to 'publicLots'}}Lots{{/link-to}}</li>
+                <li>{{#link-to 'publicItems'}}Items{{/link-to}}</li>
+              </ul>
+              <ul id="manage-nav" class="nav navbar-nav">
+                <li>{{#link-to 'lots'}}Manage Lots{{/link-to}}</li>
+              </ul>
+            </nav>
+          </div>
 
-  {{outlet}}
-
+          <div class="row">
+            {{outlet}}
+          </div>
+      </div>
+    <div class="col-sm-2"></div>
+  </div>
 </div>
