@@ -1,9 +1,11 @@
-html, body {
+body {
   font-family: 'Marck Script', cursive;
   text-align: center;
 }
 
-
+ul {
+  list-style: none;
+}
 
 h1, h2, h3, h4, h5 ,h6 {
   margin-top: 2px;
@@ -35,10 +37,9 @@ h1, h2, h3, h4, h5 ,h6 {
   /*float:left;*/
   }
 
-.public-lot-title-description-container {
-  /*width:40%;*/
-  /*float:left;*/
-  }
+.public-lot-description {
+  font-size: 20px;
+}
 
 .public-lot-title {
   font-weight: bold;
@@ -81,7 +82,12 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .thumbnail{
-  width:100px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.public-lot-items img {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -111,4 +117,10 @@ h1, h2, h3, h4, h5 ,h6 {
 
 .auction-logo img{
   width:80px;
+}
+
+#public-lot-h {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }

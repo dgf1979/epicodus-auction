@@ -1,4 +1,5 @@
-<h3>Lot Id: {{this.id}}</h3>
+<h3>Lot Id: <span id="public-lot-h">{{this.id}}</span></h3>
+
 
 <ul class="public-lot-list">
   <li><img class="public-lot-image" {{bind-attr src=this.imageURL}} /></li>
@@ -7,15 +8,14 @@
   <li>{{startPrice}}</li>
 </ul>
 
-<ul>
+<div class="row">
   {{#each item in this.items}}
-    <li>
-    {{#link-to 'publicItem' item.id}}<img class="thumbnail"{{bind-attr src=item.imageURL}} />{{/link-to}}
-    </li>
-    <li>
-      id: {{item.id}} <br />
-      title: {{item.title}} <br>
-      desc: {{item.description}}
-    </li>
+    <div class="col-sm-4">
+      <div class="public-lot-items">
+        {{item.title}} <br>
+        {{#link-to 'publicItem' item.id}}<img class="thumbnail"{{bind-attr src=item.imageURL}} />{{/link-to}}
+        {{item.description}}
+      </div>
+    </div>
   {{/each}}
-</ul>
+</div>
