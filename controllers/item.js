@@ -8,7 +8,6 @@ Auction.ItemController = Ember.ObjectController.extend({
     deleteItem: function() {
       var itemModel = this.get('model');
       var lotID = itemModel.get('lot.id');
-      alert(itemModel.lot.id);
       itemModel.destroyRecord();
       this.transitionToRoute('lot', lotID);
     }

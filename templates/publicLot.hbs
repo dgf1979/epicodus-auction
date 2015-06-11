@@ -8,14 +8,14 @@
 </ul>
 
 <ul>
-  {{#each this.items}}
+  {{#each item in this.items}}
     <li>
-    {{#link-to 'publicItem' id}}<img class="thumbnail"{{bind-attr src=imageURL}} />{{/link-to}}
+    {{#link-to 'publicItem' item.id}}<img class="thumbnail"{{bind-attr src=item.imageURL}} />{{/link-to}}
     </li>
     <li>
-      id: {{id}} <br />
-      title: {{title}} <br>
-      desc: {{description}}
+      id: {{item.id}} <br />
+      title: {{item.title}} <br>
+      desc: {{item.description}}
     </li>
   {{/each}}
 </ul>
